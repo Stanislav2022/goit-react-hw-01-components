@@ -1,9 +1,10 @@
 import StatisticsList from "./StatisticsList/StatisticsList"
+import css from './StatisticsList/StatisticsList.css'
 
 export default function Statistics({ title, stats }) {
   return (
       <section className="statistics">
-        {title && <h2 className="title">Upload stats</h2>}
+          {title && <h2 className={css.title}>Upload stats</h2>}
           <StatisticsList items={ stats } />
 
     </section>
