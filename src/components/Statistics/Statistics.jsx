@@ -1,15 +1,11 @@
-import React from 'react'
-import StatisticsList from './StatisticsList/StatisticsList.jsx'
+import StatisticsList from './StatisticsList/StatisticsList'
 
-export default function Statistics(stats) {
-    console.log(stats)
+export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-        <h2 className="title">Upload stats</h2>
-            <StatisticsList />
-        <ul className="stat-list">
-              
-        </ul>
+      <section className="statistics">
+        {title && <h2 className="title">Upload stats</h2>}
+          <StatisticsList items={ stats } />
+
     </section>
   )
 }
