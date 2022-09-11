@@ -1,12 +1,12 @@
 import React from 'react'
-
+import StatisticsList from './StatisticsList/StatisticsList.jsx'
 
 export default function Statistics(stats) {
     console.log(stats)
   return (
     <section className="statistics">
         <h2 className="title">Upload stats</h2>
-
+            <StatisticsList />
         <ul className="stat-list">
               
         </ul>
