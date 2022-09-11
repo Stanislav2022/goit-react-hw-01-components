@@ -1,5 +1,4 @@
 
-
 export default function StatisticsList({ items }) {
     const elements = items.map(({ id, label, percentage }) =>
         <li className="item" key={id}>

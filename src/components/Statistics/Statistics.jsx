@@ -1,4 +1,4 @@
-import StatisticsList from './StatisticsList/StatisticsList'
+import StatisticsList from "./StatisticsList/StatisticsList"
 
 export default function Statistics({ title, stats }) {
   return (
