@@ -1,14 +1,15 @@
+import css from './StatisticsList.css'
 
 export default function StatisticsList({ items }) {
     const elements = items.map(({ id, label, percentage }) =>
-        <li className="item" key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+        <li className={css.item} key={id}>
+            <span className={css.label}>{label}</span>
+            <span className={css.percentage}>{percentage}%</span>
         </li>
     )
     console.log(elements);
   return (
-      <ul className="stat-list">{ elements }</ul>
+      <ul className={css.stat__list}>{ elements }</ul>
   )
 }
 
