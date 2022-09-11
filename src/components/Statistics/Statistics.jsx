@@ -1,6 +1,6 @@
 import StatisticsList from "./StatisticsList/StatisticsList";
 import css from './StatisticsList/StatisticsList.module.css';
-// import css from '../Profile/Profile.module.css';
+import PropTypes from 'prop-types'
 
 export default function Statistics({ title, stats }) {
   return (
@@ -11,17 +11,13 @@ export default function Statistics({ title, stats }) {
   )
 }
 
-function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  }
-
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     })
-//   ),
-// };
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};
