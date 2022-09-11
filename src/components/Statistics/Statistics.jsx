@@ -1,5 +1,5 @@
 import StatisticsList from "./StatisticsList/StatisticsList"
-import css from './StatisticsList/StatisticsList.css'
+import css from './StatisticsList/StatisticsList.modules.css'
 
 export default function Statistics({ title, stats }) {
   return (

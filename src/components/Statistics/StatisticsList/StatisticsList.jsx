@@ -1,4 +1,4 @@
-import css from './StatisticsList.css'
+import css from './StatisticsList.modules.css'
 
 export default function StatisticsList({ items }) {
     const elements = items.map(({ id, label, percentage }) =>
