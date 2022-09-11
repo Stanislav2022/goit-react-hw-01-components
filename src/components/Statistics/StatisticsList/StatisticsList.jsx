@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export default function StatisticsList({ items }) {
     const elements = items.map(({ id, label, percentage }) =>
