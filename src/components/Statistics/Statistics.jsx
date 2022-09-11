@@ -1,27 +1,12 @@
 import StatisticsList from "./StatisticsList/StatisticsList";
-import x from './StatisticsList/StatisticsList.module.css';
-import css from '../Profile/Profile.module.css';
+import css from './StatisticsList/StatisticsList.module.css';
+// import css from '../Profile/Profile.module.css';
 
 export default function Statistics({ title, stats }) {
   return (
-      <section className={x.statistics}>
+      <section className={css.statistics}>
           {title && <h2 className={css.title}>Upload stats</h2>}
           <StatisticsList items={stats} />
-           <ul className={css.statList}>
-        {stats.map(stat => {
-          return (
-            <li
-              key={stat.id}
-              className={css.item}
-              style={{ backgroundColor: getRandomHexColor() }}
-            >
-              <span className={css.label}>{stat.label}</span>
-              <span className={css.percentage}>{stat.percentage}</span>
-            </li>
-          );
-        })}
-      </ul>
-
     </section>
   )
 }

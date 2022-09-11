@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './StatisticsList.modules.css';
+import css from './StatisticsList.module.css';
 
 export default function StatisticsList({ items }) {
     const elements = items.map(({ id, label, percentage }) =>
