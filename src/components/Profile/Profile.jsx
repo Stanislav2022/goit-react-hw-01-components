@@ -1,9 +1,9 @@
 import React from 'react'
-
+import css from '';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
     return (
-    <div className="profile">
+    <div className={css.profile}>
           <div className="description">
             <img
               src={avatar}
@@ -22,11 +22,11 @@ export default function Profile({ username, tag, location, avatar, stats }) {
           </li>
           <li>
             <span className="label">Views</span>
-            <span className="quantity">{username.views}</span>
+            <span className="quantity">{stats.views}</span>
           </li>
           <li>
             <span className="label">Likes</span>
-            <span className="quantity">{username.likes}</span>
+            <span className="quantity">{stats.likes}</span>
           </li>
         </ul>
     </div>
