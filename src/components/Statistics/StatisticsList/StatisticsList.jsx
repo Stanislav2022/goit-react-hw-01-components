@@ -9,7 +9,6 @@ export default function StatisticsList({ items }) {
             <span className={css.percentage}>{percentage}%</span>
         </li>
     )
-    console.log(elements);
   return (
       <ul className={css.stat__list}>{ elements }</ul>
   )
