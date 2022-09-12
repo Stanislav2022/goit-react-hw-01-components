@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.status{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: red;
+}
+
+.status__offline{
+    background-color:rgb(8, 179, 8);
+}
+
+.avatar{ 
+    margin-right: 10px;
+}
+
+.name{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
