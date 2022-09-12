@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: flex-start;
     list-style: none;
-    padding: 10px;
+    padding: 0 10px;
     box-shadow: 0px 0px 10px black;
 }
 .item:not(:last-child){
@@ -16,6 +16,7 @@
     border-radius: 100%;
     margin-right: 10px;
     background-color: red;
+    box-shadow: 0px 0px 5px black;
 }
 
 .status__offline{
