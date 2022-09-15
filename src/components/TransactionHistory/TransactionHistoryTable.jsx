@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 export default function TransactionHistoryTable({type, amount, currency }) {
   return (
@@ -9,3 +9,9 @@ export default function TransactionHistoryTable({type, amount, currency }) {
         </tr>
   )
 }
+
+TransactionHistoryTable.propTypes = {
+      type: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+    }

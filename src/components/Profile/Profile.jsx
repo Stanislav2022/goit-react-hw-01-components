@@ -35,7 +35,6 @@ export default function Profile({ username, tag, location, avatar, stats }) {
 }
 
 Profile.propTypes = {
-  user: PropTypes.shape({
     avatar: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     stats: PropTypes.shape({
@@ -45,6 +44,5 @@ Profile.propTypes = {
     }).isRequired,
     tag: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-  }),
 };
 
