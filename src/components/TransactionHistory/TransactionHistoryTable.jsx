@@ -13,5 +13,5 @@ export default function TransactionHistoryTable({type, amount, currency }) {
 TransactionHistoryTable.propTypes = {
       type: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
-      amount: PropTypes.number.isRequired,
+      amount: PropTypes.string.isRequired,
     }
